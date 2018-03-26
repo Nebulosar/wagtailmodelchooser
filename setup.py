@@ -12,7 +12,7 @@ with open('README.rst', 'r') as f:
     readme = f.read()
 
 setup(
-    name='wagtail-modelchooser',
+    name='wagtail1.13.1-modelchooser',
     version=version,
     description='Model choosers for Wagtail admin',
     long_description=readme,
