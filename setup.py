@@ -18,9 +18,9 @@ setup(
     long_description=readme,
     author='Tim Heap',
     author_email='tim@takeflight.com.au',
-    url='https://github.com/takeflight/wagtailmodelchooser/',
+    url='https://github.com/nebulosar/wagtailmodelchooser/',
 
-    install_requires=['wagtail>=2.0'],
+    install_requires=['wagtail>=1.13.'],
     zip_safe=False,
     license='BSD License',
 
@@ -34,6 +34,8 @@ setup(
         'Intended Audience :: Developers',
         'Operating System :: OS Independent',
         'Programming Language :: Python',
+        'Programming Language :: Python :: 2',
+        'Programming Language :: Python :: 2.7.0',
         'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.4',
         'Programming Language :: Python :: 3.5',

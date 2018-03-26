@@ -1,6 +1,6 @@
 from django.template.loader import render_to_string
 from django.utils.safestring import mark_safe
-from wagtail.admin.edit_handlers import BaseChooserPanel
+from wagtail.wagtailadmin.edit_handlers import BaseChooserPanel
 
 from .widgets import AdminModelChooser
 
@@ -13,7 +13,7 @@ class ModelChooserPanel(BaseChooserPanel):
     filter_name = None
 
     def __init__(self, field_name, filter_name=None, **kwargs):
-        super().__init__(field_name, **kwargs)
+        super(ModelChooserPanel, self).__init__(field_name, **kwargs)
 
         self.filter_name = filter_name
         if filter_name is not None:
